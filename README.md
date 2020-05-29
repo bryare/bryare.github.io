@@ -3,12 +3,13 @@
 ![Status](https://img.shields.io/website?url=https%3A%2F%2Fbryare.github.io%2F)
 ![](https://img.shields.io/github/commit-activity/m/bryare/bryare.github.io)
 ![](https://img.shields.io/github/last-commit/bryare/bryare.github.io/source)
+![HitCount](http://hits.dwyl.com/BryAre/BryAregithubio.svg)
 ________
 ![BryAre](https://img.shields.io/badge/BryAre-made%20with%20%F0%9F%92%96-brightgreen)
 
-![HitCount](http://hits.dwyl.com/BryAre/BryAregithubio.svg)
 
-Welcome! My name is **Bryan** and this repository will contain a collection of my work hosted on BryAre.github.io. I enjoy designing and tinkering with websites and like to incorporate all sorts of different technologies in my programs. This repository is being hosted by github and is built using reactJS and electronJS. I am using visual studio as my IDE and Figma to design my logos. If you have any questions or suggestions regarding this website feel free to let me know and I will respond.
+
+Welcome! My name is **Bryan** and this repository will contain a collection of my work hosted on [my website](BryAre.github.io). I enjoy designing and tinkering with websites and like to incorporate all sorts of different technologies in my programs. This repository is being hosted by github and is built using reactJS and electronJS. This means that the website can viewed online and as an application, such as VSCode which is built using electronJS. I am using visual studio as my IDE and Figma to design my logos. If you have any questions or suggestions regarding this website feel free to let me know and I will respond.
 
 
 \- made with 💖, **Bryan**
