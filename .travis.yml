@@ -1,13 +1,10 @@
 language: node_js
 node_js:
   - "stable"
+install:
+  - npm ci
 cache:
   directories:
   - node_modules
-deploy:
-  provider: script
-  script: npm run deploy
-  skip_cleanup: true
-  on:
-    branch: master
+
   
