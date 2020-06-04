@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-//import { hexToRgba } from './utils/helpers';
 import StyledSpinner from './StyledSpinner.js'
 
 const GlobalStyle = createGlobalStyle`
@@ -10,7 +9,6 @@ const GlobalStyle = createGlobalStyle`
             color: ${props => props.darkTextColor};
             background: ${props => props.darkColor};
         }
-
         &[data-theme='light'] {
             color: ${props => props.lightTextColor};
             background: ${props => props.lightColor};
@@ -19,40 +17,8 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const ThemeSwitcherWrapper = styled.div``;
-/*
-const Button = styled.button`
-    display: block;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border: none;
-    background: ${props => hexToRgba(props.switcherColor, 0.2)};
-    border-radius: 40px;
-    cursor: pointers;
-    &::after {
-        
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 7px;
-        width: 20px;
-        height: 40px;
-        background: ${props => props.switcherColor};
-        -webkit-transform: translateZ(0) translate(-50%, -50%);
-        transform: translateZ(0) translate(-50%, -50%);
-        border-radius: 90px;
-        transition: transform 0.2s cubic-bezier(0.75, 0, 0.08, 1) 0s,
-                -webkit-transform 0.2s cubic-bezier(0.75, 0, 0.08, 1) 0s;
 
-    }
-    &.active::after {
-        transform: translateX(24px) translate(-50%, -50%);
-    }
-`;
-*/
-
-class ThemeSwitcher extends Component {
+export default class ThemeSwitcher extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -90,7 +56,6 @@ class ThemeSwitcher extends Component {
         const { theme } = this.state;
         const isActive = theme === "dark" ? "active" : "";
         const {
-            //switcherColor,
             darkColor,
             lightColor,
             darkTextColor,
@@ -112,13 +77,9 @@ class ThemeSwitcher extends Component {
                     className={`${"button-switcher " + isActive}`}
                     aria-label="switch theme button"
                 >
-                    
                     <StyledSpinner/>
-
                 </a>
             </ThemeSwitcherWrapper>
         );
     }
 }
-
-export default ThemeSwitcher;

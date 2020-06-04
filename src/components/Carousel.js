@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Carousel extends Component {
+export default class Carousel extends Component {
     render() {  
         return(    
             <div className="">
@@ -20,5 +20,3 @@ class Carousel extends Component {
         )
     }
 }
-
-export default Carousel

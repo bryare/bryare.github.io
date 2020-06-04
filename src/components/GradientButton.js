@@ -1,17 +1,19 @@
 import React, {Component} from 'react';
-import {Link} from "react-router-dom";
+import { Link } from "react-scroll";
 
-class GradientButton extends Component {
+export default class GradientButton extends Component {
     render() {   
         return(    
             <Link
-                 to="#home" 
-                 className="gradient-button gradient-button-3"
+                to="#home"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="gradient-button gradient-button-3"
             >
                 Learn more
             </Link>
         )
     }
 }
-
-export default GradientButton

@@ -1,20 +1,14 @@
 import React, {Component} from 'react';
-import text from '../docs/MainText.js';
-class Home extends Component {
+import MainText from '../docs/MainText.js';
 
+export default class Home extends Component {
     render() {
-        const myText = text;
         return(
-            <section id="home">         
-                <div>
-                    <p>
-                         {myText}
-                    </p>
-                </div>                
+            <section id="home"> 
+                <p className="">
+                    {MainText}
+                </p>
             </section>   
-            
         ) 
     }
 }
-
-export default Home

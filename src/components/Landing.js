@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
-import '../styles/App.scss';
 import logo from '../assets/logo.png';
-//import Anime, {anime} from 'react-anime';
-//import Home from './Home.js';
 import Carousel from './Carousel.js';
 //import GradientButton from './GradientButton.js';
+import '../styles/App.scss';
 
-class Landing extends Component {
-
+export default class Landing extends Component {
     render() {  
         return(
             <section id="/">
@@ -22,5 +19,3 @@ class Landing extends Component {
         )
     }
 }
-
-export default Landing

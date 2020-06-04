@@ -20,7 +20,7 @@ import nodejsIcon from '@iconify/icons-logos/nodejs';
 import prettierIcon from '@iconify/icons-logos/prettier';
 import bootstrapIcon from '@iconify/icons-logos/bootstrap';
 
-class Icons extends Component {
+export default class Icons extends Component {
     render() {
         return(    
             <div className="">
@@ -47,5 +47,3 @@ class Icons extends Component {
         ) 
     }
 }
-
-export default Icons
