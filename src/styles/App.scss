@@ -1,0 +1,215 @@
+$bryare: #ff00b8;
+$bryare2: #00000049;
+$light: #f3eedf;
+$dark: #22211f;
+
+a, a:hover, a:focus, a:active { text-decoration: none; color: inherit; }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  //background-image: linear-gradient(to right, #c5bfc4fd 0%, rgba(137, 133, 138, 0.884) 51%, rgb(100, 100, 102) 100%);
+  //background-image: linear-gradient(to right, #e7e7e7fd 0%, rgba(235, 235, 235, 0.884) 51%, rgb(242, 242, 243) 100%);
+  //background-image: linear-gradient(to right, #555353fd 0%, rgba(99, 99, 99, 0.884) 51%, rgb(141, 141, 141) 100%);
+  //background-image: linear-gradient(to right, #f7daba86 0%, rgba(226, 203, 174, 0.884) 51%, rgb(231, 202, 176) 100%);
+  //background-image: linear-gradient(to right, #6b66af86 0%, rgba(113, 125, 167, 0.884) 51%, rgb(92, 92, 134) 100%);
+  //background-image: linear-gradient(to right, #4b478686 0%, rgba(79, 88, 122, 0.884) 51%, rgb(62, 62, 100) 100%);
+  //background-image: linear-gradient(to right, #d4d4d4fd 0%, rgba(209, 209, 209, 0.884) 51%, rgb(185, 185, 185) 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  line-height: 1.6;
+  height: 100vh;
+  
+}
+
+.App { text-align: center; }
+.App-logo { height: 50vmin; pointer-events: none; }
+
+@media (prefers-reduced-motion: no-preference) { .App-logo { animation: App-logo-spin infinite 20s linear; }}
+
+.App-header { background-color: #ffffff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: calc(10px + 2vmin); color: white; }
+
+@keyframes App-logo-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.container { 
+  width: 100%;
+  height: 100%;
+
+  /* CSS Smooth Scroll */
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+
+  ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+
+    li {
+      margin: 0 1rem;
+      padding: 1rem;
+
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+      }
+
+    }
+  }
+
+  
+  
+
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+
+
+.filler { margin-top: 10vh; }
+
+.gradient-button {
+  margin: 7px;
+  letter-spacing: .2em;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #FFF;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 30px;
+  width: 500px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+  display: inline-block;
+}
+.gradient-button:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 8px 10px 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.gradient-button-3 {background-image: linear-gradient(to right, #222222ee 0%, #3f3f3fd3 51%, #5c5c5cc9 100%)}
+.gradient-button-3:hover { background-position: right center; }
+
+.icon { font-size: 10vh; margin-top: 3vh; margin-left: 4vw;}
+
+.landing-text { font-size: 9vh; letter-spacing: 8px; font-weight: 200; text-transform: capitalize;
+  /*
+  text-shadow:
+              4px 4px 0 $bryare2,
+            -0px -0px 0 $bryare2,  
+              0px -0px 0 $bryare2,
+              -0px 0px 0 $bryare2,
+              2px 2px 0 $bryare2;
+  */
+}
+
+.nav-logo { font-size: 5px; width: 5vw; }
+
+.wordCarousel {
+  font-weight: 100;
+  font-size: 9vh;
+    
+    div {
+        overflow: hidden;
+        position: relative;
+        float: right;
+        height: 95px;
+        margin-top: 10px;
+        
+        li {
+            letter-spacing: 7px;
+            font-weight: 300;
+            height: 45px;
+            margin-bottom: 45px;
+            display: block;
+            
+            /*text-shadow:
+              4px 4px 0 $bryare2,
+            -0px -0px 0 $bryare2,  
+              0px -0px 0 $bryare2,
+              -0px 0px 0 $bryare2,
+              2px 2px 0 $bryare2;*/
+            
+        }
+    }
+}
+
+.flip2 { animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip3 { animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+.flip4 { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip2 {
+  0% { margin-top: -180px; }
+  5% { margin-top: -90px;  }
+  50% { margin-top: -90px; }
+  55% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
+}
+
+@keyframes flip3 {
+  0% { margin-top: -270px; }
+  5% { margin-top: -180px; }
+  33% { margin-top: -180px; }
+  38% { margin-top: -90px; }
+  66% { margin-top: -90px; }
+  71% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
+}
+
+@keyframes flip4 {
+  0% { margin-top: -360px; }
+  5% { margin-top: -270px; }
+  25% { margin-top: -270px; }
+  30% { margin-top: -180px; }
+  50% { margin-top: -180px; }
+  55% { margin-top: -90px; }
+  75% { margin-top: -90px; }
+  80% { margin-top: 0px; }
+  99.99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
+}
+
+::selection { background-color: $bryare; color: black; }
+
+/* Code for Firefox */
+::-moz-selection { background-color: $bryare; color: black; }
+
+.testing { background-color: $bryare; }
