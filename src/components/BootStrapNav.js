@@ -6,6 +6,7 @@ import heart from '../assets/heart.svg'
 import '../styles/App.scss';
 import ThemeSwitcher from './ThemeSwitcher.js'
 import { Navbar,Nav } from 'react-bootstrap'
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 export default class BootStrapNav extends Component {
     render() {
@@ -30,7 +31,6 @@ export default class BootStrapNav extends Component {
                         <Nav.Link href="#experience" className="active-page"><p className="navbar-text">Experience</p></Nav.Link>
                         <Nav.Link href="#services" className="active-page"><p className="navbar-text">Services</p></Nav.Link>
                         <Nav.Link href="#contact" className="active-page"><p className="navbar-text">Contact</p></Nav.Link>
-
                     </Nav>    
                 </Navbar.Collapse>                
                 

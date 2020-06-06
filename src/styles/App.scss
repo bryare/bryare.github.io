@@ -296,6 +296,7 @@ section {
 .navbar-text {
 
   color: $bryare !important;
+  margin: 10px;
   a{
     color:$bryare;
     
@@ -310,3 +311,5 @@ section {
 ::-webkit-scrollbar {
   display: none;
 }
+
+
