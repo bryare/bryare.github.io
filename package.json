@@ -25,7 +25,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16",
-    "react-theme-switcher": "^1.1.1"
+    "react-theme-switcher": "^1.1.1",
+    "reactstrap": "^8.4.1"
   },
   "main": "src/main.js",
   "scripts": {
@@ -53,7 +54,9 @@
     ]
   },
   "devDependencies": {
+    "@iconify/icons-ant-design": "^1.0.8",
     "@iconify/icons-logos": "^1.0.11",
+    "@iconify/icons-simple-icons": "^1.0.35",
     "@iconify/react": "^1.1.3"
   }
 }

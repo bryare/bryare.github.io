@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import AboutText from '../docs/AboutText.js';
+import Icons2 from './Icons2';
 
 export default class About extends Component {
     render() {
@@ -8,7 +9,7 @@ export default class About extends Component {
                 <p className="">
                     {AboutText}
                 </p>
-                
+                <Icons2/>
             </section>    
         ) 
     }

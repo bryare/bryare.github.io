@@ -6,7 +6,8 @@ $dark: #22211f;
 a, a:hover, a:focus, a:active 
 { 
   text-decoration: none; 
-  color: inherit; 
+  color: inherit;
+
 }
 
 * {
@@ -39,8 +40,10 @@ html { /* body won't work ¯\_(ツ)_/¯ */
 }
 
 .App-logo { 
-  height: 50vmin; 
-  pointer-events: none; 
+  width: 50vmin; 
+  pointer-events: none;
+  z-index: 0;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) { 
@@ -142,8 +145,17 @@ section {
   flex-direction: column;
   align-items: center; //vertical
   justify-content: center; //horizontal
-  text-align: left;
+  text-align: center; //CENTER????
   
+  p {
+      font-size: 3rem;
+  }
+
+  li {
+    text-align: left; //CENTER????
+    font-size: 3rem;
+  }
+      
 }
 
 .gradient-button {
@@ -182,11 +194,14 @@ section {
 }
 
 .landing-text { 
+  
   font-size: 9vh; 
   letter-spacing: 8px; 
   font-weight: 200; 
   text-transform: capitalize;
-
+  z-index: 1;
+  position: relative;
+  line-height: 1.4em;
   /*
   text-shadow:
               4px 4px 0 $bryare2,
@@ -200,27 +215,28 @@ section {
 .wordCarousel {
   font-weight: 100;
   font-size: 9vh;
-    
+  
     div {
         overflow: hidden;
         position: relative;
-        float: right;
-        height: 95px;
-        margin-top: 10px;
+        float: left;
+        height: 90px;
         
-        li {
+        
+        ol {
             letter-spacing: 7px;
             font-weight: 300;
             height: 45px;
             margin-bottom: 45px;
             display: block;
+            text-align: left;
             
-            /*text-shadow:
-              4px 4px 0 $bryare2,
-            -0px -0px 0 $bryare2,  
-              0px -0px 0 $bryare2,
-              -0px 0px 0 $bryare2,
-              2px 2px 0 $bryare2;*/
+            // text-shadow:
+            //   4px 4px 0 $bryare2,
+            // -0px -0px 0 $bryare2,  
+            //   0px -0px 0 $bryare2,
+            //   -0px 0px 0 $bryare2,
+            //   2px 2px 0 $bryare2;
         }
     }
 }
@@ -277,3 +293,20 @@ section {
   background-color: $bryare; 
 }
 
+.navbar-text {
+
+  color: $bryare !important;
+  a{
+    color:$bryare;
+    
+  }
+  p {
+      & .active-page {
+      background-color:blue !important;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

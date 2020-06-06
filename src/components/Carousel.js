@@ -8,10 +8,10 @@ export default class Carousel extends Component {
                     <h4 className="wordCarousel">  
                         <div> 
                             <ul class="flip4"> 
-                                <li>Developer.</li>
-                                <li>Designer.</li>
-                                <li>Leader.</li> 
-                                <li>Visionary.</li>  
+                                <ol>Developer.</ol>
+                                <ol>Designer.</ol>
+                                <ol>Leader.</ol> 
+                                <ol>Visionary.</ol>  
                             </ul>
                         </div>  
                     </h4>
