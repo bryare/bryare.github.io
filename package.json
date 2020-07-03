@@ -26,7 +26,8 @@
     "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16",
     "react-theme-switcher": "^1.1.1",
-    "reactstrap": "^8.4.1"
+    "reactstrap": "^8.4.1",
+    "snyk": "^1.359.1"
   },
   "main": "src/main.js",
   "scripts": {
@@ -36,7 +37,9 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
-    "electron": "electron ."
+    "electron": "electron .",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -58,5 +61,6 @@
     "@iconify/icons-logos": "^1.0.11",
     "@iconify/icons-simple-icons": "^1.0.35",
     "@iconify/react": "^1.1.3"
-  }
+  },
+  "snyk": true
 }
